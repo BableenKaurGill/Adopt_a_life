@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_homepage2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context="com.example.jaggi.project1.Homepage">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#cac6c6">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/button_lay_id"
+        android:weightSum="3">
+
+        <Button
+            android:layout_width="0.001dp"
+            android:layout_height="40dp"
+            android:onClick="open_all_child"
+            android:layout_weight="1"
+            android:background="@drawable/crawl"
+            android:textColor="#fff"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"/>
+
+        <Button
+            android:layout_width="0.001dp"
+            android:layout_height="40dp"
+            android:onClick="add_child"
+            android:layout_weight="1"
+           android:background="@drawable/add"
+            android:textColor="#fff"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"/>
+
+        <Button
+            android:layout_width="0.001dp"
+            android:layout_height="40dp"
+            android:onClick="open_account"
+            android:layout_weight="1"
+            android:background="@drawable/menu"
+            android:textColor="#fff"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+
+            />
+
+
+    </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Adopt Child"
+                android:textColor="#fff"
+                android:textSize="20dp"
+                android:id="@+id/adopt"
+                android:gravity="center"
+                android:layout_weight="0.84" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add Child"
+                android:textColor="#fff"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:layout_weight="1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Account"
+                android:textColor="#fff"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:layout_weight="1"
+                 />
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/button_lay_id"
+            android:id="@+id/frame_id">
+
+        </FrameLayout>
+
+    </LinearLayout>
+</RelativeLayout>
+
+
+
+
+

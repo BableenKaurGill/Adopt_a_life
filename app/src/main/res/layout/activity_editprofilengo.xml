@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_editprofilengo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:background="#8ddedada"
+    tools:context="com.example.jaggi.project1.Editprofilengo">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="EDIT PROFILE"
+                android:textSize="30dp"
+                android:textColor="#fff"
+                android:background="#44bfd7"
+                android:typeface="serif"
+                android:gravity="center_horizontal"
+                android:id="@+id/edit_tv"
+
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:textStyle="bold"
+                android:textColor="#ece8e8"
+                android:layout_marginTop="20dp"
+                android:textSize="20dp"/>
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:textColor="#ece8e8"
+                android:background="#666161"
+                android:id="@+id/name_et"
+                android:imeOptions="actionNext"
+                android:inputType="textPersonName"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Email"
+                android:textStyle="bold"
+                android:textColor="#ece8e8"
+                android:textSize="20dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:textColor="#ece8e8"
+                android:background="#666161"
+                android:id="@+id/email_et"
+                android:enabled="false"
+                android:imeOptions="actionNext"
+                android:inputType="textEmailAddress"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Password"
+                android:textStyle="bold"
+                android:textColor="#ece8e8"
+                android:textSize="20dp"/>
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:textColor="#ece8e8"
+                android:background="#666161"
+                android:id="@+id/password_et"
+                android:imeOptions="actionNext"
+                android:inputType="textPassword"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Contact Details"
+                android:textStyle="bold"
+                android:textColor="#ece8e8"
+                android:textSize="20dp"/>
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:textColor="#ece8e8"
+                android:background="#666161"
+                android:id="@+id/contact_et"
+                android:imeOptions="actionNext"
+                android:maxLength="10"
+                android:inputType="phone"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Address"
+                android:textStyle="bold"
+                android:textColor="#ece8e8"
+                android:textSize="20dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:textColor="#ece8e8"
+                android:background="#666161"
+                android:id="@+id/address_et"
+                android:imeOptions="actionNext"
+                android:maxLength="10"
+                />
+
+
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="UPDATE"
+                android:textSize="20dp"
+                android:backgroundTint="#44bfd7"
+                android:textColor="#fff"
+                android:layout_marginTop="25dp"
+                android:onClick="update_btn"/>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>

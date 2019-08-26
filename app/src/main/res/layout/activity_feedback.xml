@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_feedback"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:background="#d7dada"
+    tools:context="com.example.jaggi.project1.Feedback">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#fff"
+        >
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cancel"
+                android:textColor="#428ac1"
+                android:textSize="20dp"
+                android:layout_alignParentLeft="true"
+                android:clickable="true"
+                android:onClick="cancel"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Feedback"
+                android:textColor="#000"
+                android:textSize="20dp"
+                android:gravity="center"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Send"
+                android:textColor="#428ac1"
+                android:textSize="20dp"
+                android:layout_alignParentRight="true"
+                android:clickable="true"
+                android:onClick="send"
+                />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#969090"
+            />
+
+       <EditText
+           android:layout_width="match_parent"
+           android:layout_height="150dp"
+           android:hint="Please share your feedback."
+           android:textColorHint="#969090"
+           android:textColor="#969090"
+           android:textSize="20dp"
+           android:gravity="start"
+           android:background="@null"
+           android:id="@+id/feedback_et"
+           android:imeOptions="actionNext"
+           android:inputType="text"
+           />
+
+    </LinearLayout>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="NGO name"
+        android:layout_marginTop="20dp"
+        android:textColorHint="#969090"
+        android:textColor="#969090"
+        android:background="#fff"
+        android:textSize="20dp"
+        android:gravity="start"
+        android:id="@+id/ngo_name"
+        android:imeOptions="actionNext"
+        android:inputType="textPersonName"
+        />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Date"
+            android:layout_marginTop="20dp"
+            android:textColorHint="#969090"
+            android:textColor="#969090"
+            android:textSize="20dp"
+            android:background="#fff"
+            android:gravity="start"
+            android:id="@+id/date_et"
+            android:clickable="true"
+            android:onClick="select_date"
+            android:inputType="date"
+            android:imeOptions="actionDone"
+            android:focusable="false"
+
+            />
+
+
+    </LinearLayout>
+</ScrollView>
+</RelativeLayout>

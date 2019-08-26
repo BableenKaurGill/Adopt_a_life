@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_otpngo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#44bfd7"
+    android:padding="20dp"
+    tools:context="com.example.jaggi.project1.Otpngo">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        >
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:hint="Enter OTP Code"
+            android:textColorHint="#95999b"
+            android:gravity="center"
+            android:textColor="#000"
+            android:textSize="25dp"
+            android:id="@+id/otp_et"
+            android:imeOptions="actionDone"
+            />
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#2376c9"
+            android:layout_marginTop="50dp"
+            android:text="VERIFY"
+            android:textColor="#fff"
+            android:textSize="20dp"
+            android:onClick="verify"/>
+
+    </LinearLayout>
+</RelativeLayout>

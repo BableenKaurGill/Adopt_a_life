@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_ngosignup"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#8ddedada"
+
+    tools:context="com.example.jaggi.project1.Ngosignup">
+
+       <ScrollView
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:orientation="vertical">
+
+               <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#f4f3f3"
+            android:id="@+id/rel"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Adopt A Life"
+                android:textSize="40dp"
+                android:layout_centerHorizontal="true"
+                android:textColor="#44bfd7"
+                android:textStyle="bold"
+                android:typeface="serif"
+                android:id="@+id/tv"
+                />
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/img7"
+                android:layout_below="@+id/tv"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/iv"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="#8d161616"
+                android:layout_below="@+id/iv"
+                />
+
+        </RelativeLayout>
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="NGO"
+                   android:textSize="20dp"
+                   android:layout_below="@+id/rel"
+                   android:textColor="#000"
+                   android:backgroundTint="#f4f3f3"
+                   android:background="#fff"
+                   android:gravity="center_horizontal"
+                   />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SIGN UP"
+            android:textSize="20dp"
+            android:layout_below="@+id/rel"
+            android:textColor="#000"
+            android:backgroundTint="#f4f3f3"
+            android:background="#fff"
+            android:gravity="center_horizontal"
+            android:id="@+id/tv1"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="#8d161616"
+            android:layout_below="@+id/tv1"
+            android:id="@+id/v"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/v"
+            android:layout_marginTop="15dp"
+            android:padding="15dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:textColor="#ece8e8"
+                android:textSize="20dp"
+                android:id="@+id/name_tv"
+                />
+
+            <EditText
+                android:id="@+id/Name_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:imeOptions="actionNext"
+                android:inputType="textPersonName"
+                android:textColor="#000"
+                android:textColorHint="#95999b"
+                android:textSize="20dp"
+                android:layout_below="@+id/name_tv"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Email"
+                android:textColor="#ece8e8"
+                android:textSize="20dp"
+                android:id="@+id/email_tv"
+                android:layout_below="@+id/Name_et"
+                />
+            <EditText
+                android:id="@+id/Email_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/email_tv"
+                android:background="#fff"
+                android:imeOptions="actionNext"
+                android:inputType="textEmailAddress"
+                android:textColor="#000"
+                android:textColorHint="#95999b"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Password"
+                android:textColor="#ece8e8"
+                android:textSize="20dp"
+                android:id="@+id/pw_tv"
+                android:layout_below="@+id/Email_et"
+                />
+            <EditText
+                android:id="@+id/Password_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pw_tv"
+                android:background="#fff"
+                android:imeOptions="actionNext"
+                android:inputType="textPassword"
+                android:textColor="#000"
+                android:textColorHint="#95999b"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Contact Details"
+                android:textColor="#ece8e8"
+                android:textSize="20dp"
+                android:id="@+id/contact_tv"
+                android:layout_below="@+id/Password_et"
+                />
+            <EditText
+                android:id="@+id/Contact_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/contact_tv"
+                android:background="#fff"
+                android:imeOptions="actionNext"
+                android:inputType="phone"
+                android:maxLength="10"
+                android:textColor="#000"
+                android:textColorHint="#95999b"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Address"
+                android:textColor="#ece8e8"
+                android:textSize="20dp"
+                android:id="@+id/address_tv"
+                android:layout_below="@+id/Contact_et"
+                />
+
+
+            <fragment
+                android:id="@+id/place_autocomplete_fragment"
+                android:name="com.google.android.gms.location.places.ui.PlaceAutocompleteFragment"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_below="@+id/address_tv"
+                android:background="#fff"
+                android:focusable="false"
+                />
+
+
+        </LinearLayout>
+
+               <Button
+                   android:layout_width="150dp"
+                   android:layout_height="wrap_content"
+                   android:text="Submit"
+                   android:layout_centerHorizontal="true"
+                   android:textSize="20dp"
+                   android:textColor="#fff"
+                   android:backgroundTint="#44bfd7"
+                   android:onClick="submitt"
+                   android:layout_gravity="center"/>
+
+
+           </LinearLayout>
+       </ScrollView>
+    </RelativeLayout>
+
+
+

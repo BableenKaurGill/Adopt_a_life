@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="@drawable/img6"
+    tools:context="com.example.jaggi.project1.Identity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Adopt A Life"
+        android:textSize="50dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="#44bfd7"
+        android:textStyle="bold"
+        android:layout_marginTop="120dp"
+        android:typeface="serif"
+        android:id="@+id/tv"
+        />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/img7"
+        android:layout_below="@+id/tv"
+        android:layout_centerHorizontal="true"
+        />
+
+
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/b2"
+        android:text="Continue as a NGO"
+        android:textSize="20dp"
+        android:textColor="#fff"
+        android:onClick="continueasango"
+        android:id="@+id/b1"
+        android:backgroundTint="#44bfd7"
+
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="Continue as a User"
+        android:textSize="20dp"
+        android:textColor="#fff"
+        android:onClick="continueasauser"
+        android:layout_marginBottom="15dp"
+        android:backgroundTint="#44bfd7"
+        android:id="@+id/b2"
+
+        />
+
+</RelativeLayout>

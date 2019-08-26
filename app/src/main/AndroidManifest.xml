@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.jaggi.project1">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:name="android.support.multidex.MultiDexApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.NoActionBar">
+        <activity android:name=".Applayout">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Signin" />
+        <activity android:name=".Usersignup" />
+        <activity android:name=".drawer" />
+        <activity android:name=".profilecontinues" />
+        <activity android:name=".Ngosignup" />
+        <activity android:name=".Resetpassword" />
+        <activity android:name=".Parentdetails" />
+        <activity android:name=".Profilefor" />
+        <activity android:name=".Resetusingemail" />
+        <activity android:name=".Resetusingcontact" />
+        <activity android:name=".Onetimepassword" />
+        <activity android:name=".Newpassword" />
+        <activity android:name=".Editprofileuser" />
+        <activity android:name=".Profilephoto" />
+        <activity android:name=".Homepage" />
+        <activity android:name=".Identity" />
+        <activity android:name=".Editprofilengo" />
+        <activity android:name=".Resetngopassword" />
+        <activity android:name=".Resetngousingcontact" />
+        <activity android:name=".Resetngousingemail" />
+        <activity android:name=".Otpngo" />
+        <activity android:name=".Newpswdngo" />
+        <activity android:name=".Feedback" />
+        <activity android:name=".Homepagengo" />
+        <activity android:name=".desiredchild" />
+        <activity android:name=".Viewfeedback" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCoACGzF9Lu5-wyl7_gWyuYyedA4P7wUz0" />
+
+        <activity android:name=".Search_child" />
+        <activity android:name=".My_child_user" />
+        <activity android:name=".My_child_ngo"></activity>
+    </application>
+
+</manifest>

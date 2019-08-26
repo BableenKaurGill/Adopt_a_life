@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_profilefor"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#95999b"
+    android:padding="20dp"
+    tools:context="com.example.jaggi.project1.Profilefor">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/img7"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Create profile for"
+                android:textSize="35dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                />
+
+
+        </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="horizontal"
+                android:id="@+id/firstlayout"
+                android:weightSum="2"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#44bfd7"
+                    android:layout_margin="2dp"
+                    android:gravity="center"
+                    android:clickable="true"
+                    android:onClick="client_click"
+                    android:orientation="vertical"
+                    android:id="@+id/client"
+                    >
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/img1"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#fff"
+                        android:layout_marginTop="10dp"
+                        android:text="Client(NGO)"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_margin="2dp"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:background="#44bfd7"
+                    android:clickable="true"
+                    android:onClick="friend_click"
+                    android:id="@+id/friend"
+                    >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                       android:src="@drawable/img9"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Friend"
+                        android:layout_marginTop="10dp"
+                        android:textColor="#fff"
+                        />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:id="@+id/secondlayout"
+                android:orientation="horizontal"
+                android:layout_below="@+id/firstlayout"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#44bfd7"
+                    android:orientation="vertical"
+                    android:layout_margin="2dp"
+                    android:gravity="center"
+                    android:clickable="true"
+                    android:onClick="niece_click"
+                    android:id="@+id/niece"
+                    >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                       android:src="@drawable/img10"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Niece"
+                        android:layout_marginTop="10dp"
+                        android:textColor="#fff"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_margin="2dp"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:background="#44bfd7"
+                    android:clickable="true"
+                    android:onClick="nephew_click"
+                    android:id="@+id/nephew"
+                    >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                       android:src="@drawable/img11"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Nephew"
+                        android:layout_marginTop="10dp"
+                        android:textColor="#fff"
+                        />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="horizontal"
+                android:id="@+id/feedback_lay"
+                android:layout_below="@+id/secondlayout"
+                android:weightSum="2"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#44bfd7"
+                    android:orientation="vertical"
+                    android:layout_margin="2dp"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:onClick="sister_click"
+                    android:id="@+id/sister"
+                    >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                       android:src="@drawable/img16"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sister"
+                        android:layout_marginTop="10dp"
+                        android:textColor="#fff"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#44bfd7"
+                    android:orientation="vertical"
+                    android:layout_margin="2dp"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:onClick="brother_click"
+                    android:id="@+id/brother"
+
+                    >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/img17"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Brother"
+                        android:layout_marginTop="10dp"
+                        android:textColor="#fff"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="horizontal"
+                android:id="@+id/thirdlayout"
+                android:layout_below="@+id/secondlayout"
+                android:weightSum="2"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#44bfd7"
+                    android:orientation="vertical"
+                    android:layout_margin="2dp"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:onClick="daughter_click"
+                    android:id="@+id/daughter"
+                    >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                       android:src="@drawable/img14"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Daughter"
+                        android:layout_marginTop="10dp"
+                        android:textColor="#fff"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#44bfd7"
+                    android:orientation="vertical"
+                    android:layout_margin="2dp"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:onClick="son_click"
+                    android:id="@+id/son"
+
+                    >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                       android:src="@drawable/img15"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Son"
+                        android:layout_marginTop="10dp"
+                        android:textColor="#fff"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="skip"
+        android:textColor="#44bfd7"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/skip_btn"
+        android:backgroundTint="#fff"
+        android:visibility="gone"
+        android:onClick="go_user_home"/>
+</RelativeLayout>

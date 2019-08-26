@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_profilecontinues"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#8ddedada"
+
+    tools:context="com.example.jaggi.project1.profilecontinues">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#f4f3f3"
+            android:id="@+id/rel"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Adopt A Life"
+                android:textSize="40dp"
+                android:layout_centerHorizontal="true"
+                android:textColor="#44bfd7"
+                android:textStyle="bold"
+                android:typeface="serif"
+                android:id="@+id/tv"
+                />
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/img7"
+                android:layout_below="@+id/tv"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/iv"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="#8d161616"
+                android:layout_below="@+id/iv"
+                />
+
+        </RelativeLayout>
+         <TextView
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:text="CHILD DETAILS"
+             android:layout_below="@+id/rel"
+             android:textSize="20dp"
+             android:textColor="#000"
+             android:backgroundTint="#f4f3f3"
+             android:background="#fff"
+             android:gravity="center_horizontal"
+             android:id="@+id/tv1"
+
+             />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="#8d161616"
+            android:layout_below="@+id/tv1"
+            android:id="@+id/v"
+
+            />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:textColor="#ece8e8"
+                android:textSize="20dp"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:background="#666161"
+                    android:textSize="20dp"
+                    android:textColor="#ece8e8"
+                    android:id="@+id/name_et"
+                    android:inputType="textPersonName"
+                    android:imeOptions="actionNext"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Gender"
+                    android:textColor="#ece8e8"
+                    android:textSize="20dp"/>
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/RadioGroup_gender"
+                    android:orientation="horizontal"
+                    android:background="#666161"
+                    android:weightSum="2"
+                    >
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Male"
+                        android:textColor="#ece8e8"
+                        android:textSize="20dp"
+                        android:layout_weight="1"
+                        android:id="@+id/male_rb"
+                        android:buttonTint="#fff"
+                        android:imeOptions="actionNext"
+                        />
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Female"
+                        android:buttonTint="#fff"
+                        android:id="@+id/female_rb"
+                        android:textColor="#ece8e8"
+                        android:textSize="20dp"
+                        android:imeOptions="actionNext"
+
+                        />
+                </RadioGroup>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Date Of Birth"
+                    android:textColor="#ece8e8"
+                    android:textSize="20dp"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:hint="Select"
+                    android:textColorHint="#ece8e8"
+                    android:background="#666161"
+                    android:textSize="20dp"
+                    android:textColor="#ece8e8"
+                    android:id="@+id/datpckr"
+                    android:inputType="date"
+                    android:imeOptions="actionNext"
+                    android:focusable="false"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Skin Tone"
+                    android:textColor="#ece8e8"
+                    android:textSize="20dp"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:background="#666161"
+                    android:textSize="20dp"
+                    android:textColor="#ece8e8"
+                    android:id="@+id/skin_et"
+                    android:imeOptions="actionNext"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Any Disability"
+                    android:textColor="#ece8e8"
+                    android:textSize="20dp"/>
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/RadioGroup_disable"
+                    android:orientation="horizontal"
+                    android:background="#666161"
+                    android:weightSum="2"
+
+                    >
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Yes"
+                        android:textColor="#ece8e8"
+                        android:textSize="20dp"
+                        android:layout_weight="1"
+                        android:id="@+id/disability_rb"
+                        android:buttonTint="#fff"
+                        android:imeOptions="actionNext"
+                        />
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="None"
+                        android:buttonTint="#fff"
+                        android:id="@+id/disabilityno_rb"
+                        android:textColor="#ece8e8"
+                        android:textSize="20dp"
+                        android:imeOptions="actionNext"
+
+                        />
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Living In"
+                    android:textColor="#ece8e8"
+                    android:textSize="20dp"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:background="#666161"
+                    android:textSize="20dp"
+                    android:textColor="#ece8e8"
+                    android:id="@+id/living_et"
+                    android:imeOptions="actionNext"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Height (cm)"
+                    android:textColor="#ece8e8"
+                    android:textSize="20dp"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:background="#666161"
+                    android:textSize="20dp"
+                    android:textColor="#ece8e8"
+                    android:id="@+id/height_et"
+                    android:imeOptions="actionNext"
+                    />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Body Type"
+                    android:textColor="#ece8e8"
+                    android:textSize="20dp"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:background="#666161"
+                    android:textSize="20dp"
+                    android:textColor="#ece8e8"
+                    android:id="@+id/body_et"
+                    android:imeOptions="actionNext"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Education Level"
+                    android:textColor="#ece8e8"
+                    android:textSize="20dp"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:background="#666161"
+                    android:textSize="20dp"
+                    android:textColor="#ece8e8"
+                    android:id="@+id/education_et"
+                    android:imeOptions="actionDone"
+                    />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Continue"
+                    android:textSize="20dp"
+                    android:textColor="#fff"
+                    android:onClick="submit"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="#44bfd7"
+
+                    />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

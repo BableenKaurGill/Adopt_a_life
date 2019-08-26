@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:background="@drawable/img6"
+    tools:context="com.example.jaggi.project1.Signin">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Adopt A Life"
+    android:textSize="50dp"
+    android:layout_centerHorizontal="true"
+    android:textColor="#44bfd7"
+    android:textStyle="bold"
+    android:layout_marginTop="120dp"
+    android:typeface="serif"
+    android:id="@+id/tv"
+    />
+
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/img7"
+        android:layout_gravity="center"
+
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:hint="Email"
+        android:textColorHint="#fff"
+        android:textSize="20dp"
+        android:textColor="#fff"
+        android:id="@+id/Email_et"
+        android:background="@null"
+        android:imeOptions="actionNext"
+        android:inputType="textEmailAddress"
+        />
+    
+     <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#fff"
+         android:id="@+id/view1"
+       />
+
+      <EditText
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/view1"
+          android:hint="Password"
+          android:layout_marginTop="10dp"
+          android:textColorHint="#fff"
+          android:textSize="20dp"
+          android:textColor="#fff"
+          android:id="@+id/Password_et"
+          android:background="@null"
+          android:imeOptions="actionDone"
+          android:inputType="textPassword"
+          />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#fff"
+        android:id="@+id/v2"
+       />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/v2"
+        android:text="SIGN IN"
+        android:textSize="20dp"
+        android:textColor="#fff"
+        android:onClick="signin"
+        android:backgroundTint="#44bfd7"
+        android:id="@+id/b2"  />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/b2"
+        android:text="SIGN UP"
+        android:textSize="20dp"
+        android:textColor="#fff"
+        android:onClick="signup"
+        android:backgroundTint="#44bfd7"
+        android:id="@+id/b1"
+          />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forgot Password?"
+        android:textSize="20dp"
+        android:textColor="#fff"
+        android:layout_gravity="center"
+        android:layout_below="@id/b1"
+        android:clickable="true"
+        android:onClick="reset_password"
+
+        />
+
+
+</LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

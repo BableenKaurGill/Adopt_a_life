@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_homepagengo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context="com.example.jaggi.project1.Homepagengo">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#cac6c6">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/button_lay_id"
+        android:weightSum="2"
+        >
+
+
+        <Button
+            android:layout_width="0.001dp"
+            android:layout_height="40dp"
+            android:onClick="add_child"
+            android:background="@drawable/add"
+            android:layout_weight="1"
+            android:textColor="#fff"
+            android:layout_marginRight="50dp"
+            android:layout_marginLeft="50dp"/>
+
+        <Button
+            android:layout_width="0.001dp"
+            android:layout_height="40dp"
+            android:onClick="open_account"
+            android:layout_weight="1"
+            android:background="@drawable/menu"
+            android:textColor="#fff"
+            android:layout_marginRight="50dp"
+            android:layout_marginLeft="50dp"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Child"
+            android:textColor="#fff"
+            android:textSize="20dp"
+            android:id="@+id/home_text"
+            android:gravity="center"
+            android:layout_weight="1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Account"
+            android:textColor="#fff"
+            android:textSize="20dp"
+            android:layout_marginLeft="30dp"
+            android:layout_toRightOf="@id/home_text"
+            android:gravity="center"
+            android:layout_weight="0.70" />
+        </LinearLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/button_lay_id"
+        android:id="@+id/frame_id">
+    </FrameLayout>
+
+    </LinearLayout>
+</RelativeLayout>
